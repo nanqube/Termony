@@ -46,6 +46,10 @@ LD_LIBRARY_PATH=/data/service/hnp/base.org/base_1.0/lib TERMINFO=/data/service/h
 
 You can persist them to `~/.bashrc`, and run bash before executing other commands from Termony:
 
+If your computer is HarmonyOS 6.0, your terminal supports the sudo command, which allows you to write environment variables to the system environment variables. This way, when booting up, it will automatically enable the Termony command without having to enter bash on the terminal.
+
+run `sudo vim /data/service/el1/public/startup/profile` or `sudo vim /system/etc/profile` or `sudo /etc/profile`
+
 ```shell
 if [ -d "/data/service/hnp/base.org/base_1.0" ]; then
   export LD_LIBRARY_PATH=/data/service/hnp/base.org/base_1.0/lib
